@@ -1,1 +1,272 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United States - Earth Processes & Geography</title>
+    <style>
+        /* CSS Reset & General Setup */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #2b2b2b;
+            background-color: #f8f9fa;
+        }
+
+        /* Top Ribbon / Navigation Bar */
+        header {
+            background-color: #1a365d;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+        }
+
+        .site-title {
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 0.4rem;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #2b6cb0;
+            color: #ffffff;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .hero {
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .hero-header {
+            padding: 2rem 2rem 1.25rem;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .hero-header h1 {
+            font-size: 2.25rem;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-header p {
+            font-size: 1.05rem;
+            color: #4a5568;
+        }
+
+        .hero-image-container {
+            width: 100%;
+            max-height: 480px;
+            overflow: hidden;
+            background-color: #e2e8f0;
+        }
+
+        .hero-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-image-caption {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.85rem;
+            color: #718096;
+            text-align: center;
+            background-color: #f1f5f9;
+            font-style: italic;
+        }
+
+        /* Content Sections Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 550px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 1.75rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #2b6cb0;
+        }
+
+        .card h2 {
+            font-size: 1.3rem;
+            color: #1a365d;
+            margin-bottom: 0.75rem;
+        }
+
+        .card p {
+            color: #4a5568;
+            font-size: 0.95rem;
+            line-height: 1.65;
+            margin-bottom: 0.75rem;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background-color: #1a365d;
+            color: #cbd5e1;
+            font-size: 0.85rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Ribbon Navigation Bar -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="site-title">USA Physical Geography</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="maps.html">Maps & Location</a></li>
+                    <li><a href="tectonics.html">Tectonics & Volcanoes</a></li>
+                    <li><a href="weathering.html">Weathering & Erosion</a></li>
+                    <li><a href="fluvial.html">Fluvial & Oceans</a></li>
+                    <li><a href="climate.html">Climate & Biomes</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+
+        <!-- Hero / Header Section -->
+        <section class="hero">
+            <div class="hero-header">
+                <h1>United States of America</h1>
+                <p>An Overview of Physical Geography and Earth Processes</p>
+            </div>
+            
+            <figure class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=1200&q=80" alt="Grand Canyon National Park, Arizona">
+            </figure>
+            <figcaption class="hero-image-caption">
+                Grand Canyon National Park, Arizona — A prominent showcase of fluvial erosion, rock weathering, and geological stratigraphy in North America.
+            </figcaption>
+        </section>
+
+        <!-- Information Sections Grid -->
+        <div class="content-grid">
+
+            <!-- Historical Overview -->
+            <article class="card">
+                <h2>Historical Context</h2>
+                <p>
+                    The physical landscape of the United States has shaped its human history. Indigenous nations developed distinct regional societies adapted to North America's varied ecosystems long before European contact.
+                </p>
+                <p>
+                    Following European colonization and the establishment of the nation in 1776, 19th-century westward expansion was guided by geographic features—including major river systems like the Mississippi and mountain corridors through the Appalachians and Rockies.
+                </p>
+            </article>
+
+            <!-- Cultural Profile -->
+            <article class="card">
+                <h2>Cultural Profile</h2>
+                <p>
+                    American culture is a diverse composite influenced by indigenous heritage, European settlement, African traditions, and global immigration. Regional identities reflect local geography, from coastal maritime communities to Midwestern agricultural heartlands.
+                </p>
+                <p>
+                    Landscapes feature heavily in American literature, art, and folklore, contributing to the establishment of the world's first national park system at Yellowstone in 1872.
+                </p>
+            </article>
+
+            <!-- Social Dynamics -->
+            <article class="card">
+                <h2>Social Structure</h2>
+                <p>
+                    Home to over 330 million people, the United States is highly urbanized. Population density is heavily concentrated along coastal corridors, the Great Lakes basin, and major metropolitan river basins.
+                </p>
+                <p>
+                    Demographics and settlement patterns continue to evolve alongside geographic factors, including regional climate trends, water access in western states, and natural hazard management.
+                </p>
+            </article>
+
+            <!-- Economic Systems -->
+            <article class="card">
+                <h2>Economic Profile</h2>
+                <p>
+                    The U.S. maintains the world's largest nominal GDP, driven by technology, services, manufacturing, finance, and agriculture. Physical geography provides a substantial foundation for this economic activity.
+                </p>
+                <p>
+                    Expansive fertile plains support extensive food production, vast mineral and fossil fuel reserves drive industrial capacity, and extensive natural harbors along the Atlantic, Pacific, and Gulf coasts facilitate international commerce.
+                </p>
+            </article>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Earth Processes Research Project — United States of America</p>
+    </footer>
+
+</body>
+</html>
